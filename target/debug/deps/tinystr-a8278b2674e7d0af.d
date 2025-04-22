@@ -1,0 +1,12 @@
+D:\CS128H\Final Project\target\debug\deps\libtinystr-a8278b2674e7d0af.rmeta: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\macros.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\ascii.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\asciibyte.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\error.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\int_ops.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\unvalidated.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\ule.rs
+
+D:\CS128H\Final Project\target\debug\deps\tinystr-a8278b2674e7d0af.d: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\macros.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\ascii.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\asciibyte.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\error.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\int_ops.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\unvalidated.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\ule.rs
+
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\lib.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\macros.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\ascii.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\asciibyte.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\error.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\int_ops.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\unvalidated.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinystr-0.7.6\src\ule.rs:

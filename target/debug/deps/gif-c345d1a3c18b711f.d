@@ -1,0 +1,12 @@
+D:\CS128H\Final Project\target\debug\deps\libgif-c345d1a3c18b711f.rmeta: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\traits.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\common.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\mod.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\decoder.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\converter.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\encoder.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\../README.md
+
+D:\CS128H\Final Project\target\debug\deps\gif-c345d1a3c18b711f.d: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\traits.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\common.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\mod.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\decoder.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\converter.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\encoder.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\../README.md
+
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\lib.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\traits.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\common.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\mod.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\decoder.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\reader\converter.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\encoder.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gif-0.13.1\src\../README.md:

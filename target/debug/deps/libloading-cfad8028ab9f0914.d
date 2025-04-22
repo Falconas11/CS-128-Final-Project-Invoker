@@ -1,0 +1,11 @@
+D:\CS128H\Final Project\target\debug\deps\liblibloading-cfad8028ab9f0914.rmeta: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\changelog.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\mod.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\windows\mod.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\util.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\error.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\safe.rs
+
+D:\CS128H\Final Project\target\debug\deps\libloading-cfad8028ab9f0914.d: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\changelog.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\mod.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\windows\mod.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\util.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\error.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\safe.rs
+
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\lib.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\changelog.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\mod.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\windows\mod.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\util.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\error.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\safe.rs:

@@ -1,0 +1,13 @@
+D:\CS128H\Final Project\target\debug\deps\libhalf-73f704decc86f5fc.rmeta: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\bfloat.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\bfloat\convert.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16\arch.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16\arch\x86.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\leading_zeros.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\slice.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\vec.rs
+
+D:\CS128H\Final Project\target\debug\deps\half-73f704decc86f5fc.d: C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\lib.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\bfloat.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\bfloat\convert.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16\arch.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16\arch\x86.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\leading_zeros.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\slice.rs C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\vec.rs
+
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\lib.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\bfloat.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\bfloat\convert.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16\arch.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\binary16\arch\x86.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\leading_zeros.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\slice.rs:
+C:\Users\falco\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.6.0\src\vec.rs:
