@@ -227,7 +227,7 @@ impl InvokerApp {
                             self.target_buffer.pop_front();
                             let (_c, new_spell) = self.invoker.random_spell();
                             self.target_buffer.push_back(new_spell);
-                            self.info = Some(format!("Good! New: {}", new_spell));
+                            self.info = Some(format!("Good!"));
                         } else {
                             self.info = Some("Wrong skill!".into());
                         }
