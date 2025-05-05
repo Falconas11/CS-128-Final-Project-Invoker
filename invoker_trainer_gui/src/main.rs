@@ -2,6 +2,7 @@
 
 mod invoker;
 
+use std::time::Instant;
 use std::collections::HashMap;
 use invoker::Invoker;
 use std::collections::VecDeque;
@@ -53,7 +54,12 @@ pub struct InvokerApp {
     info: Option<String>,
     invoker: Invoker,
     textures: HashMap<String, egui::TextureHandle>,
+    target_buffer: VecDeque<&'static str>, 
+    score: u32,
+    action_times: VecDeque<Instant>, 
 }
+
+const APM_WINDOW_SECS: f32 = 5.0; // apm window
 
 impl InvokerApp {
     pub fn new(cc: &CreationContext<'_>) -> Self {
@@ -63,8 +69,16 @@ impl InvokerApp {
             info: None,
             invoker: Invoker::new(),
             textures: HashMap::new(),
+            target_buffer: VecDeque::with_capacity(7),
+            score: 0,
+            action_times: VecDeque::new(),
         };
         app.load_textures(&cc.egui_ctx);
+        // initialize random targets
+        for _ in 0..7 {
+            let (_c, spell) = app.invoker.random_spell();
+            app.target_buffer.push_back(spell);
+        }
         app
     }
 
@@ -95,7 +109,25 @@ impl InvokerApp {
         }
     }
 
-    fn draw_input(&self, ui: &mut egui::Ui) {
+    fn draw_input(&mut self, ui: &mut egui::Ui) {
+        // 计算瞬时 APM
+        let now = Instant::now();
+        while let Some(&t) = self.action_times.front() {
+            if now.duration_since(t).as_secs_f32() > APM_WINDOW_SECS {
+                self.action_times.pop_front();
+            } else {
+                break;
+            }
+        }
+        let apm_val = self.action_times.len() as f32 * (60.0 / APM_WINDOW_SECS);
+
+        ui.horizontal(|ui| {
+            ui.label(format!("APM: {}", apm_val.round() as u32));
+            ui.separator();
+            ui.label(format!("Score: {}", self.score));
+        });
+
+        ui.separator();
         ui.horizontal(|ui| {
             for i in 0..3 {
                 if let Some(&ch) = self.buffer.get(i) {
@@ -129,16 +161,37 @@ impl InvokerApp {
         });
 
         ui.separator();
+        ui.label("Targets:");
+        ui.horizontal(|ui| {
+            for &spell in &self.target_buffer {
+                let key = spell.to_lowercase().replace(' ', "_");
+                if let Some(tex) = self.textures.get(&key) {
+                    ui.image(tex);
+                } else {
+                    ui.label(spell);
+                }
+            }
+        });
+
+        ui.separator();
         if let Some(msg) = &self.info {
             ui.label(msg);
         } else {
-            ui.label("Press Q, W, E for Ice, Thunder and Fire...");
+            ui.label("Press Q/W/E, R to invoke, D/F to use slot.");
         }
     }
 
-    fn on_key(&mut self, key: char) {
-        let mut rng = thread_rng();
+    fn record_action(&mut self) {
+        self.action_times.push_back(Instant::now());
+    }
 
+    fn on_key(&mut self, key: char) {
+        match key {
+            'q' | 'w' | 'e' | 'r' | 'd' | 'f' => self.record_action(),
+            _ => {}
+        }
+
+        let mut rng = thread_rng();
         match key {
             'q' | 'w' | 'e' => {
                 if self.buffer.len() == 3 {
@@ -152,25 +205,31 @@ impl InvokerApp {
                     if let Some(&spell_name) = self.invoker.get_spell(&combo) {
                         if self.invoked_spells.len() == 2 && self.invoked_spells[1] == spell_name {
                             self.invoked_spells.swap(0, 1);
-                            self.info = INVOKE_QUOTES
-                                .choose(&mut rng)
-                                .copied()
-                                .map(String::from);
-                        
+                            self.info = INVOKE_QUOTES.choose(&mut rng).copied().map(String::from);
                         } else if self.invoked_spells.front().map_or(false, |s| s == spell_name) {
-                            self.info = FAILED_QUOTES
-                                .choose(&mut rng)
-                                .copied()
-                                .map(String::from);
+                            self.info = FAILED_QUOTES.choose(&mut rng).copied().map(String::from);
                         } else {
                             if self.invoked_spells.len() == 2 {
                                 self.invoked_spells.pop_back();
                             }
                             self.invoked_spells.push_front(spell_name.to_string());
-                            self.info = INVOKE_QUOTES
-                                .choose(&mut rng)
-                                .copied()
-                                .map(String::from);
+                            self.info = INVOKE_QUOTES.choose(&mut rng).copied().map(String::from);
+                        }
+                    }
+                }
+            }
+            'd' | 'f' => {
+                let idx = if key == 'd' { 0 } else { 1 };
+                if let Some(spell) = self.invoked_spells.get(idx) {
+                    if let Some(&target) = self.target_buffer.front() {
+                        if spell == target {
+                            self.score += 1;
+                            self.target_buffer.pop_front();
+                            let (_c, new_spell) = self.invoker.random_spell();
+                            self.target_buffer.push_back(new_spell);
+                            self.info = Some(format!("Good! New: {}", new_spell));
+                        } else {
+                            self.info = Some("Wrong skill!".into());
                         }
                     }
                 }
@@ -184,24 +243,19 @@ impl App for InvokerApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         egui::CentralPanel::default().show(ctx, |ui| {
             self.draw_input(ui);
-
             ctx.input(|i| {
-                if i.key_pressed(egui::Key::Q) {
-                    self.on_key('q');
-                }
-                if i.key_pressed(egui::Key::W) {
-                    self.on_key('w');
-                }
-                if i.key_pressed(egui::Key::E) {
-                    self.on_key('e');
-                }
-                if i.key_pressed(egui::Key::R) {
-                    self.on_key('r');
-                }
+                if i.key_pressed(egui::Key::Q) { self.on_key('q'); }
+                if i.key_pressed(egui::Key::W) { self.on_key('w'); }
+                if i.key_pressed(egui::Key::E) { self.on_key('e'); }
+                if i.key_pressed(egui::Key::R) { self.on_key('r'); }
+                if i.key_pressed(egui::Key::D) { self.on_key('d'); }
+                if i.key_pressed(egui::Key::F) { self.on_key('f'); }
             });
         });
     }
 }
+
+
 
 fn main() -> Result<(), eframe::Error> {
     eframe::run_native(
